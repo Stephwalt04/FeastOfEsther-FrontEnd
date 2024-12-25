@@ -1,0 +1,104 @@
+/* Scoped Event Form Styles */
+.event-form {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.event-form h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: rgb(200, 14, 145); /* Title color */
+  margin-bottom: 1rem;
+}
+
+/* Form Input Styles Scoped to .event-form */
+.event-form form div {
+  margin-bottom: 1.5rem;
+}
+
+.event-form label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(200, 14, 145);
+  margin-bottom: 0.5rem;
+}
+
+.event-form input[type="text"],
+.event-form textarea,
+.event-form input[type="file"] {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  color: #000;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.event-form input[type="text"]:focus,
+.event-form textarea:focus,
+.event-form input[type="file"]:focus {
+  border-color: rgb(200, 14, 145);
+}
+
+.event-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+/* Button Styles Scoped to .event-form */
+.event-form button {
+  background-color: rgb(200, 14, 145);
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.event-form button:hover {
+  background-color: rgb(200, 14, 145);
+  transform: scale(1.05);
+}
+
+/* Responsive Design Scoped to .event-form */
+@media (max-width: 768px) {
+  .event-form {
+    padding: 1.5rem;
+  }
+
+  .event-form button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-form {
+    padding: 1rem;
+  }
+
+  .event-form label {
+    font-size: 0.9rem;
+  }
+
+  .event-form input[type="text"],
+  .event-form textarea,
+  .event-form input[type="file"] {
+    font-size: 0.9rem;
+  }
+
+  .event-form button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}

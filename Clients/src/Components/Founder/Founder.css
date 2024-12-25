@@ -1,0 +1,108 @@
+.ome {
+  position: relative;
+}
+
+.Home img {
+  object-fit: cover;
+  height: 650px;
+}
+.Home {
+  position: relative;
+}
+.Home::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(225, 45, 168, 0.336);
+}
+
+.center h2,
+p {
+  color: white;
+}
+
+.founder h1 {
+  font-weight: bold;
+  font-size: 42px;
+  text-align: center;
+  color: #777;
+}
+.founder p {
+  color: #777;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.feast {
+  background-color: #d6d3d3;
+}
+
+.fluid {
+  background-color: #dddadc;
+}
+.select p {
+  color: #777;
+  font-weight: bold;
+  font-size: 16px;
+}
+.select {
+  margin-top: 60px;
+  padding-bottom: 30px;
+}
+
+.mc p {
+  color: #717070;
+  font-weight: bold;
+}
+
+.mummy {
+  padding-top: 20px;
+}
+
+.mummy img {
+  width: 100%;
+  max-width: 150px;
+  margin: 10px auto;
+  display: block;
+  border: 7px solid rgb(177, 7, 115);
+  border-radius: 60%;
+}
+
+.angels {
+  width: 100%;
+  height: auto;
+  border: 3px solid #a18598;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: rgba(225, 45, 168, 0.664);
+  box-shadow: white 1px 1px 1px;
+}
+
+@media (max-width: 768px) {
+  .center {
+    font-size: 14px;
+    padding: 20px;
+  }
+
+  .founder h1 {
+    font-size: 28px;
+  }
+
+  .mummy img {
+    max-width: 120px;
+  }
+}
